@@ -2,17 +2,21 @@
 #include <stdlib.h>
 #include <new>
 #include <string>
+#define LEN 10
 
 using namespace std;
 
+/* FUNCTIONS */
 void clearscreen(void);
 void chooseop(int);
 void showmenu();
+//int* fillarray(void);
+
 int main()
 {
     /* VARIABLES */
     int op;
-
+    //int array[LEN] = fillarray();
 
     showmenu();
     do
@@ -84,3 +88,19 @@ void chooseop(int option)
             return;
     }
 }
+
+/*
+int* fillarray()
+{
+    int array[LEN];
+    int i;
+
+    for (i = 0; i < LEN ; i++)
+    {
+        cout << "Enter integer value for " << i << endl;
+        cin >> array[i];
+    }
+    return array;
+}
+
+*/
